@@ -1,2 +1,15 @@
-<h1>Home</h1>
-<p>Put the login/reset/signup form here.</p>
+<h1>Jobzzie</h1>
+
+<%= form_for :user, url: login_url, method: :post do |f| %>
+	<p>
+		<%= f.label :email %>
+		<%= f.text_field :email, placeholder: "Email address" %>
+	</p>
+	<p>
+		<%= f.label :password %>
+		<%= f.password_field :password, placeholder: "Password" %>
+	</p>
+	<p>
+		<%= f.submit "Log in" %>
+	</p>
+<% end %>
