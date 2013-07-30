@@ -1,3 +1,11 @@
-UserMailer#reset_email
+We received a request to reset your Jobzzie credentials. To do so,
+please follow the link below.
 
-<%= @greeting %>, find me in app/views/app/views/user_mailer/reset_email.text.erb
+http://localhost:3000/reset/<%= @user.code %>
+
+This link will expired at <%= @user.expires_at %>. If you received
+this email in error, simply do nothing.
+
+Thanks!
+
+The Jobzzie Team

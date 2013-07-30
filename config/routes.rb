@@ -1,6 +1,6 @@
 Jobzzie::Application.routes.draw do
 
-# mental note to self; url is get "whatever" => "controller_name#method_name on that page"
+#mental note to self; url is get "whatever" => "controller_name#method_name on that page"
   
   # Employer routes
   get "employer_profile" => "employer#index", as: :employer_profile

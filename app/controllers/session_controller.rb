@@ -15,7 +15,9 @@ class SessionController < ApplicationController
   				# set user code and expires_at
   				@user.code = SecureRandom.urlsafe_base64
   				@user.expires_at = Time.now + 4.hours
+
   				# TODO: send password reset email with a coded link
+          UserMailer.reset_email(@user).deliver
 
   				# redirect back to login with message
   				redirect_to root_url, notice: "An email with a reset link has been sent."
@@ -46,9 +48,10 @@ class SessionController < ApplicationController
   			@registrant = Registrant.new(email: params[:user][:email])
   			# set code and expires_at
   			@registrant.code = SecureRandom.urlsafe_base64
-			@registrant.expires_at = Time.now + 4.hours
-			@registrant.save
+			  @registrant.expires_at = Time.now + 4.hours
+			  @registrant.save
   			# TODO: send registration email with coded link
+          UserMailer.register_email(@user).deliver
 
   			# redirect back to login with message
   			redirect_to root_url, notice: "A registration email has been sent."
