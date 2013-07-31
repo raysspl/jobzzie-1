@@ -1,1 +1,62 @@
-index.html.erb
+INDEX.HTML.ERB
+<h1>Home</h1>
+<p>Put the login/reset/signup form here.</p>
+
+<!DOCTYPE html>
+<head>
+   <script type="text/javascript" src= "javascripts/homepage.js"></script>
+   <link rel="stylesheet" type="text/css" href="bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="styl3.css">
+</head>
+
+<div id="contentTopDiv">
+    <div class="newslettersoc">
+       <ul>
+     <li><a href="http://twitter.com/stancetrader" class="twit">Twitter</a></li>
+     <li><a href="http://facebook.com/stancetrader" class="face">Facebook</a></li>
+		 <li><a href="http://flickr.com" class="flic">Flickr</a></li>
+		 <li><a href="http://youtube.com" class="yout">Youtube</a></li>
+      </ul>
+    </div>
+</div>
+<body>
+  <header>
+    <center>
+      <img id='logo' src='http://i1314.photobucket.com/albums/t563/raydipasupil/jobzzie_Final_72_zps2710de48.gif' height='150px' width='370px'/><br/><br/>
+    <!--   <span id='sign'>
+        <a href='#login' id='login_btn'><h1>LOG IN</a><br/><br/>
+        <a href='#signup' id='signup_btn'>SIGN UP</a><br/></br></h1>
+      </span> -->
+          
+      <form method='post' id='login_form'>
+        Email OR Username: &nbsp;&nbsp;
+        <input type='text' name='email' placeholder='e.x. rayray@winning.com' /><br/>Password:&nbsp;&nbsp;
+        <input type='password' name='pass' placeholder='e.x. jamesdgaf'/><br/>
+        <input type='submit' value="Let's go!"/><br/><br/>
+        <a href='#forgotPassword' id='forgotpdubBtn'>Forgot your password?</a><br/><br/>
+        <a href='#signup' id='signupformbtn'/><h4>Don't have an account yet? Sign up!</h4></a><br/>
+      </form>
+      
+      <form method='post' id='signup_form'>First name:</br>
+        <input type='text' name='first_name' placeholder='e.x. Two'/><br/>Last name:<br/>
+        <input type='text' name='last_name' placeholder='e.x. Chainz'/><br/>Email:<br/>
+        <input type='text' name='email' placeholder='YOLO@swerve.com'/><br/>
+        Password:<br/>
+        <input type='text' name='pdub' placeholder='xxxxxxxxxxxxxxxxx'/><br/>
+        Requirements from applicants:<br/>
+        <textarea name='reqs' placeholder='Tell us your  requirements from candidates'></textarea><br/>
+        <button type='submit' name='btn'>Save &amp; Continue</button>
+        <button type='delete' name='dlt'>Delete</button></br>
+        <a href="#login" id="loginformbtn">Already have an account?</a>
+        <div id="contentTopDiv">
+      </form>
+
+      <form id="forgotPassword" method="post">
+        Email: <input type="text" name="email" />
+        <input type="submit" value="Go!" name="sub" /><br/><br/>
+        <a href="#login" id="bckToLogin">Back to login</a>
+      </form></br/></br/>
+    </center>
+  </header>
+</body>          
+</html>

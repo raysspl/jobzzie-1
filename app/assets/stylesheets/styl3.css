@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+/*  background-image:url(http://i1314.photobucket.com/albums/t563/raydipasupil/jobzzie_Icon_Final_300_zps8c932df0.png);*/
+  background-image:url(http://1.bp.blogspot.com/-llk1KwNx6xE/TplfIcUVh9I/AAAAAAAAACw/gKGZpdNrz3o/s1600/gray_background1.jpg);
+ 
+}
+
+header {
+  height: relative;
+  width: relative;
+  /*background-color: rgba(255,155,100, 0.6);*/
+  position: absolute;
+  top:30%;
+  margin-top: -35px;
+  left: 50%;
+  margin-left:-200px;
+}
+
+#sign {
+  color:#000; 
+}
+   
+a {
+	text-decoration:none;
+	color:black;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+/*cursor:pointer;
+}*/
+
+textarea { 
+	height:100px;
+    width:390px;
+    resize:none;
+}
+
+#contentTopDiv ul {
+   list-style: none;
+   margin: 10;
+   padding: 0;
+}
+
+#contentTopDiv li {
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+
+#contentTopDiv li a {
+    display: block;
+	width: 119px;
+    text-decoration: none;
+	margin: 10px 10px 0px 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+    color: #fff;
+    background: #ff6600;
+	padding: 5px 10px 5px 40px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+#contentTopDiv li a:hover {
+     color: #000;
+}
+
+#contentTopDiv a.twit {
+   background: #ff6600 url('http://www.multnomahartscenter.org/images/mailing_soc/twitter.png') 5% center no-repeat;
+}
+#contentTopDiv a.face {
+   background: #ff6600 url('http://www.multnomahartscenter.org/images/mailing_soc/facebook.png') 5% center no-repeat;
+}	
+#contentTopDiv a.flic {
+   background: #ff6600 url('http://www.multnomahartscenter.org/images/mailing_soc/flickr.png') 5% center no-repeat;
+}	
+#contentTopDiv a.yout {
+   background: #ff6600 url('http://www.multnomahartscenter.org/images/mailing_soc/youtube.png') 5% center no-repeat;
+}
+
+/*#container {
+	background-image: url("http://i1314.photobucket.com/albums/t563/raydipasupil/8b6b8019-1dba-492f-8bf9-51e82de5bc48_zps7ce4e963.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-top: 100px;
+	img.expand: auto;
+}
+
+
+
+#userDataForm {
+	margin: 0 auto;
+	margin-right: 30px;
+	width: 500px;
+	background: rgba(270, 270, 65, 0.5);	
+	height: 750px; 
+	box-shadow: 10px 10px 5px black;
+	border: 2px solid #a1a1a1;
+	border-radius: 25px;
+	padding: 20px 0 0 10px;
+	color: black;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+}
+
+div {
+	font-family: 'Freckle Face';
+	font-style: normal;
+  	font-weight: 400;
+}
